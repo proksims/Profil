@@ -1,3 +1,4 @@
+// ***********************************************************
 // get parent element
 const worksContent = document.querySelector(".works_content");
 const btnContainer = document.querySelector(".btn-container");
@@ -30,7 +31,7 @@ function diplayItems(items) {
 
 function displayButtons() {
   // const categories = ["all", "C", "C++", "JS"]
-  // auto:
+  // auto categories:
   const categories = items.reduce(
     function (values, item) {
       if (!values.includes(item.category)) {
@@ -72,8 +73,20 @@ function displayButtons() {
   });
 }
 
+// ***********************************************************
+// dark mode
 const change_mode = document.querySelector(".hello_btn");
 change_mode.onclick = function () {
   const dark_mode = document.querySelector("html");
   dark_mode.classList.toggle("dark_mode");
+  // Сохранение состояния в localStorage
+  localStorage.setItem("darkMode", dark_mode.classList.contains("dark_mode"));
+};
+
+// Проверка состояния при загрузке страницы
+window.onload = function () {
+  const darkMode = localStorage.getItem("darkMode");
+  if (darkMode === "true") {
+    document.querySelector("html").classList.add("dark_mode");
+  }
 };

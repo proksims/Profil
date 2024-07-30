@@ -7,6 +7,7 @@ const items = [
   //   link: "https://github.com/proksims/Profil",
   //   git: "git_white",
   // },
+
   {
     id: 2,
     title: "Math",
@@ -79,6 +80,14 @@ const items = [
     link: "https://github.com/proksims/Linux_projects",
     git: "git_white",
   },
+  {
+    id: 11,
+    title: "ToDo List",
+    category: "JS",
+    img: "./img/works/todo.png",
+    link: "https://proksims.github.io/ToDo/",
+    git: "none",
+  },
   // {
   //   id: 11,
   //   title: "Intensive SQL",
@@ -93,13 +102,5 @@ const items = [
   //   img: "./img/works/js.jpeg",
   //   link: "#",
   //   git: "git_white",
-  // },
-  // {
-  //   id: 13,
-  //   title: "ToDo List",
-  //   category: "JS",
-  //   img: "./img/works/todo.png",
-  //   link: "#",
-  //   git: "none",
   // },
 ];
