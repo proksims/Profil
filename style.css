@@ -442,8 +442,8 @@ a {
   bottom: 0;
   margin: auto 0;
   transition: 0.4s;
-  box-shadow: 0 0px 15px #2020203d;
-  background: white url("img/sunny.png");
+  box-shadow: 0 0px 5px #2020203d;
+  background: white url("img/sunny.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -456,7 +456,7 @@ input:hover + .slider {
 
 input:checked + .slider:before {
   transform: translateX(24px);
-  background: rgb(70, 50, 67) url("img/night.png");
+  background: rgb(70, 50, 67) url("img/night.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
